@@ -23,9 +23,7 @@ class Hero {
   Hero(this.number, this.email);
 
   factory Hero.fromJson(Map<String, dynamic> json) {
-    return Hero(
-        number:json['number'],
-        ;
+   return Hero(json['number'], json['email']);
   }
 }
 
